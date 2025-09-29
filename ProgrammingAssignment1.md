@@ -83,5 +83,3 @@ def main():
 
 For more details about the assignment, refer to the following link:
 [Assignment Description](https://www.dropbox.com/scl/fo/50zruygolfcicpd6z856p/h?rlkey=3t5xjy0xm3lqkgh3fpqwbc77r&dl=0)
-
-# My solution
