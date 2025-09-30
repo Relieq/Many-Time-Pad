@@ -16,10 +16,10 @@ def reveal(Ci, key):
     out=[]
     for pos, b in enumerate(Ci[:len(key)]):
         if key[pos] is None:
-            out.append('·')
+            out.append('_')
         else:
             ch = b ^ key[pos]
-            out.append(chr(ch) if is_printable(ch) else '.')
+            out.append(chr(ch) if is_printable(ch) else '·')
     return ''.join(out)
 
 def score_key_segment(C_list, j, key_seg):
@@ -84,7 +84,7 @@ for pos in top_positions(votes):
 print(key)
 print(f'Target:\n{reveal(C_target, key)}')
 
-crib = b"to"
+crib = b"The"
 candidates = try_crib_positions(C, C_target, crib)
 print("Top candidates (score, offset):", [(s, j) for s, j, _ in candidates])
 
