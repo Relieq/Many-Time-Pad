@@ -85,3 +85,11 @@ For more details about the assignment, refer to the following link:
 [Assignment Description](https://www.dropbox.com/scl/fo/50zruygolfcicpd6z856p/h?rlkey=3t5xjy0xm3lqkgh3fpqwbc77r&dl=0)
 
 # My solution
+By assumption, the character at that position in the chosen plaintext might be either a letter or a space.
+
+* If it's a space, then the characters at that position in the pairwise XORed plaintexts will be either letters (if the 
+character at that position in the other plaintext is a letter) or nulls (if both of the characters are spaces).
+* If it's a letter, then the characters at that position in the pairwise XORed plaintexts will be random control characters 
+(if the character at that position in the other plaintext is a letter with the same case), numbers or punctuation (if the 
+other character is a letter with different case) or that particular letter with the case flipped (if the other character 
+is a space).
